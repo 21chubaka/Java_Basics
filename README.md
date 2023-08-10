@@ -8,3 +8,5 @@ it returns to the user.
 
 01_pop_cal.java:<br>
 Population Calculator<br>
+A program to take a user given number of years and return the population after that number of years.
+The program assumes the current population is 312,032,486.
