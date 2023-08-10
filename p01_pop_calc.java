@@ -14,7 +14,7 @@ public class p01_pop_calc {
             Double addPop = (amtYearsSec / 7) - (amtYearsSec / 13) + (amtYearsSec / 45);
             Double newPop = addPop + curPop;
 
-            System.out.println("Population after " + amtYears + "years: " + newPop);
+            System.out.println("Population after " + amtYears + " years: " + newPop);
         } else {
             System.out.println("The Amount of Years must be greater than zero. Please try again.");
         }
