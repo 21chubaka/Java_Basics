@@ -10,3 +10,7 @@ it returns to the user.
 Future Population Calculator<br>
 A program to take a user given number of years and return the population after that number of years.
 The program assumes the current population is 312,032,486.
+
+02_x_y_distance.java:<br>
+X & Y Distance<br>
+A program to takes two Xs and Ys from a user and calculates the distance between the two points.
