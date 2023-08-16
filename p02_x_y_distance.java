@@ -1,3 +1,12 @@
+/* - X & Y Distance Program - 
+- Program to takes two Xs and Ys from a user and calculates the distance between the two points.
+Prompt user for two sets of X & Y points
+Intialize X & Y variables
+Create scanner objects for the user input of X & Ys
+Calculate the distance and return it the user
+Close scanner objects
+*/
+
 import java.util.Scanner;
 import java.lang.Math.*;
 
