@@ -1,3 +1,15 @@
+/* - Triangle Perimeter Calculator -
+Inform the user of the rules of the program
+Setup up three scanners to take input from user
+Assign the three inputs to a Double variable
+Check if the the sides are suitable to create a triangle:
+    If so:
+        Calculate the perimeter and return to user
+    If not:
+        Inform the user of mistake
+Close the scanners
+*/
+
 package part2;
 
 // Import Libraries
