@@ -1,3 +1,4 @@
+package part1;
 /* - X & Y Distance Program - 
 - Program to takes two Xs and Ys from a user and calculates the distance between the two points.
 Prompt user for two sets of X & Y points

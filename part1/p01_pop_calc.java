@@ -1,3 +1,4 @@
+package part1;
 /* - Future Population Calculator - 
 - Program to take a user given number of years and return the population after that number of years
 The program assumes the current population is 312,032,486 and that a year is 365 days
