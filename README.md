@@ -1,13 +1,12 @@
 # Java_Basics
 Basic Java Skills
 
-p0_area_vol.java:<br>
 Area & Volume Calculator - p0_area_vol.java:<br>
 A program that takes a radius and a length of a cylinder and computes its area and volume, which
 it returns to the user.
 
-p01_pop_calc.java:<br>
 Future Population Calculator<br>
+p01_pop_calc.java:<br>
 A program to take a user given number of years and return the population after that number of years.
 The program assumes the current population is 312,032,486.
 
