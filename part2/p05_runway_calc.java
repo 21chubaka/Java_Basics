@@ -15,6 +15,10 @@ Close the scanners for speed, acceleration, and condition
 
 package part2;
 
+// Import Libraries
+import java.util.Scanner;
+import java.lang.Math.*;
+
 public class p05_runway_calc {
     
 }
