@@ -19,3 +19,8 @@ p03_tri_perimeter.java:<br>
 Triangle Perimeter Calculator<br>
 A program to takes three length of sides of a triangle from a user and calculates the perimeter of that
 triangle (if it is possible).
+
+p04_area_pentagon.java:<br>
+Area of a Pentagon Calculator<br>
+A program to takes the length from the center to the vertex of a pentagon from a user and calculates the area
+of the pentagon.  The user input must be valid.
