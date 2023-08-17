@@ -11,6 +11,10 @@ Close the scanner
 
 package part2;
 
+// Import libs
+import java.util.Scanner;
+import java.lang.Math.*;
+
 public class p04_area_pentagon {
     
 }
