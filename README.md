@@ -24,3 +24,9 @@ p04_area_pentagon.java:<br>
 Area of a Pentagon Calculator<br>
 A program to takes the length from the center to the vertex of a pentagon from a user and calculates the area
 of the pentagon.  The user input must be valid.
+
+p05_runway_calc.java:<br>
+Minimum Runway Calculator<br>
+A program to takes a Speed, Accelaration, and the Weather Condition from a user. The Speed and Accelaration
+must be a number.  The weather condition will be either wet ('w' or 'W') or dry ('d' or 'D').  The program
+then calculated the minimum runway needed for a plane to take-off and returns it to the user.
