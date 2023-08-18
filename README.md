@@ -34,3 +34,7 @@ then calculated the minimum runway needed for a plane to take-off and returns it
 Chinese Zodiac<br>
 p06_chinese_zodiac.java:<br>
 A program to takes a user year of birth and returns their Chinese Zodiac Animal.
+
+Number of Days in a Month<br>
+p07_day_num.java:<br>
+A program to takes a year and a month as an integer from the user and returns how many days are/were in that month.
