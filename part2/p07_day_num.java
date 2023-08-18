@@ -17,6 +17,9 @@ Close the scanners
 
 package part2;
 
+// Import Libraries
+import java.util.Scanner;
+
 public class p07_day_num {
     
 }
