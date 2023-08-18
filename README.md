@@ -30,3 +30,7 @@ p05_runway_calc.java:<br>
 A program to takes a Speed, Accelaration, and the Weather Condition from a user. The Speed and Accelaration
 must be a number.  The weather condition will be either wet ('w' or 'W') or dry ('d' or 'D').  The program
 then calculated the minimum runway needed for a plane to take-off and returns it to the user.
+
+Chinese Zodiac<br>
+p06_chinese_zodiac.java:<br>
+A program to takes a user year of birth and returns their Chinese Zodiac Animal.
