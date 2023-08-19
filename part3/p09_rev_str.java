@@ -11,6 +11,9 @@ Close the scanner
 
 package part3;
 
+// Import Libraries
+import java.util.Scanner;
+
 public class p09_rev_str {
     
 }
