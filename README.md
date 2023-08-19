@@ -38,3 +38,7 @@ A program to takes a user year of birth and returns their Chinese Zodiac Animal.
 Number of Days in a Month<br>
 p07_day_num.java:<br>
 A program to takes a year and a month as an integer from the user and returns how many days are/were in that month.
+
+Vowels & Consonants<br>
+p08_vowel_cons.java:<br>
+A program to takes a string from a user and returns the number of the vowels and consonants.
