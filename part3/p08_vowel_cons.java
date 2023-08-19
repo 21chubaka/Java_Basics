@@ -20,5 +20,41 @@ package part3;
 import java.util.Scanner;
 
 public class p08_vowel_cons {
-    
+    public static void main(String[] args) {
+        // Inform user of rules of program
+        System.out.println("- Please enter a String and I will return the Number of Vowels & Consonants -");
+
+        // Scanner for User String
+        Scanner userString = new Scanner(System.in);
+        System.out.println("Enter Your String: ");
+        String userWords = userString.nextLine();
+        //System.out.println("Testing userWords: " + userWords);
+
+        // Convert the User String to lowercase
+        String lowWords = userWords.toLowerCase();
+        //System.out.println("Testing lowWords: " + lowWords);
+
+        // Intialize Vowel & Consonant Counter
+        Integer vowelCount = 0;
+        Integer consonCount = 0;
+        
+        // Loop to iterate over the lowercase string
+        for (int i = 0; i < lowWords.length(); i++) {
+            // Check if each character is a vowel
+            if (lowWords.charAt(i) == 'a' || lowWords.charAt(i) == 'e' || lowWords.charAt(i) == 'i' || lowWords.charAt(i) == 'o' || lowWords.charAt(i) == 'u') {
+                vowelCount++;
+            } 
+            // After checking for a vowel check if character is a letter
+            else if (Character.isLetter(lowWords.charAt(i))) {
+                consonCount++;
+            }
+        }
+
+        // Return Vowel & Consonant counts to user
+        System.out.println("Number of Vowels: " + vowelCount);
+        System.out.println("Number of Consonants: " + consonCount);
+
+        // Close Scanner
+        userString.close();
+    }
 }
