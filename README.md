@@ -42,3 +42,7 @@ A program to takes a year and a month as an integer from the user and returns ho
 Vowels & Consonants<br>
 p08_vowel_cons.java:<br>
 A program to takes a string from a user and returns the number of the vowels and consonants.
+
+Reverse the String<br>
+p09_rev_str.java:<br>
+A program to takes a string from a user and returns the reverse of the string.
