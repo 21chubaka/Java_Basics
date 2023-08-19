@@ -15,5 +15,33 @@ package part3;
 import java.util.Scanner;
 
 public class p09_rev_str {
-    
+    public static void main(String[] args) {
+        // Inform user of rules of program
+        System.out.println("- Please enter a String and I will return your String in Reverse -");
+
+        // Scanner for User String
+        Scanner userString = new Scanner(System.in);
+        System.out.println("Enter Your String: ");
+        String userWords = userString.nextLine();
+        //System.out.println("Testing userWords: " + userWords);
+
+        // Intialize a letter variable and reversed string variable
+        Character letter;
+        String revString = "";
+
+        // Loop through the string
+        for (int i = 0; i < userWords.length(); i++) {
+            // Grabs each character
+            letter = userWords.charAt(i);
+            // Add each character to the reversed string variable
+            revString = letter + revString;
+        }
+
+        // Return the Reversed String to the User
+        System.out.println("Your string in Reverse:");
+        System.out.println(revString);
+
+        // Close the scanner
+        userString.close();
+    }
 }
