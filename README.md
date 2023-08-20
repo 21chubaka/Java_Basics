@@ -54,3 +54,8 @@ A program to take a string from a user and returns the cypher string.
 Common Suffixes<br>
 p11_commmon_suf.java:<br>
 A program to take two strings from a user and returns the common suffixes from the two strings in reverse.
+
+Guess a Number<br>
+p12_guess_num.java:<br>
+A program that randomly generates an integer and asks the user to guess the number.  It tells of the user was
+right, too high, or too low.  For this program the user only gets one guess.
