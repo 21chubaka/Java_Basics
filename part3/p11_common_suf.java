@@ -31,6 +31,9 @@ Close scanners
 
 package part3;
 
+// Import Libraries
+import java.util.Scanner;
+
 public class p11_common_suf {
     
 }
