@@ -24,6 +24,10 @@ Check if the guess is valid (bet 0-100 inclusive):
 
 package part3;
 
+// Import Libraries
+import java.util.Scanner;
+import java.util.Random;
+
 public class p12_guess_num {
     
 }
