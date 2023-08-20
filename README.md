@@ -50,3 +50,7 @@ A program to take a string from a user and returns the reverse of the string.
 Cypher<br>
 p10_cypher.java:<br>
 A program to take a string from a user and returns the cypher string.
+
+Common Suffixes<br>
+p11_commmon_suf.java:<br>
+A program to take two strings from a user and returns the common suffixes from the two strings in reverse.
