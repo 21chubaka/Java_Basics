@@ -30,5 +30,55 @@ package part3;
 import java.util.Scanner;
 
 public class p10_cypher {
-    
+    public static void main(String[] args) {
+        // Inform user of rules of program
+        System.out.println("- Please enter a String and I will return a String Cyphered -");
+
+        // Scanner for User String
+        Scanner userString = new Scanner(System.in);
+        System.out.println("Enter Your String: ");
+        String userCypher = userString.nextLine();
+
+        // Intialize a character variable, return Cypher string variable, and a string of the alphabet
+        Character letter;
+        String retCypher = "";
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+        // Loop through the user string
+        for (int i = 0; i < userCypher.length(); i++) {
+            // Grabs each character
+            letter = userCypher.charAt(i);
+
+            // Check if the character is Upper case or is Not a Letter
+            if (Character.isUpperCase(letter) || Character.isLetter(letter) == false) {
+                // Add the character unchanged to the return cypher
+                retCypher = retCypher + letter;
+            } else {
+                // Find the index of the letter from the alphabet string
+                int idxLetter = alphabet.indexOf(letter);
+                //System.out.println(idxLetter);
+
+                // Check if the letter is 'a'
+                if (letter == 'a') {
+                    // Add 'z' to the return cypher
+                    retCypher = retCypher + 'z';
+                } else {
+                    // Grab the index of the previous letter of the alphabet
+                    int lastIdxLetter = idxLetter - 1;
+                    // Intialize a character variable with the previous letter of the alphabet
+                    Character lastLetter = alphabet.charAt(lastIdxLetter);
+
+                    // Add the previous letter to the return cypher
+                    retCypher = retCypher + lastLetter;
+                }
+            }
+        }
+
+        // Return the cyphered message to the user
+        System.out.println("-- Cyphered Message --");
+        System.out.println(retCypher);
+
+        // Close the scanner
+        userString.close();
+    }
 }
