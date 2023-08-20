@@ -26,6 +26,9 @@ Close the scanner
 
 package part3;
 
+// Import Libraries
+import java.util.Scanner;
+
 public class p10_cypher {
     
 }
