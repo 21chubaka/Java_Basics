@@ -42,6 +42,10 @@ isSorted function:
 
 package part4;
 
+// Import Libraries
+import java.util.Scanner;
+import java.util.Arrays;
+
 public class p14_four_con_ints {
     
 }
