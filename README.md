@@ -63,3 +63,7 @@ right, too high, or too low.  For this program the user only gets one guess.
 Is an Array Sorted<br>
 p13_sorted_arr.java:<br>
 A program that takes a series of integers from a user and tells the user if it is sorted or not.
+
+Has Four Consecutive Integers<br>
+p14_four_con_ints.java:<br>
+A program that takes a series of integers from a user and tells the user if the elements are four consecutive integers.
