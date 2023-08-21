@@ -41,6 +41,10 @@ isSorted function:
 
 package part4;
 
+// Import Libraries
+import java.util.Scanner;
+import java.util.Arrays;
+
 public class p13_sorted_arr {
     
 }
