@@ -29,5 +29,42 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class p12_guess_num {
-    
+    public static void main(String[] args) {
+        // Inform the user of the rules of the program
+        System.out.println("Guess a Number from 0-100.");
+        System.out.println("Your Guess must be an Integer.");
+
+        // Scanner for User Guess
+        Scanner userGuess = new Scanner(System.in);
+        System.out.println("Enter a Number: ");
+        Integer guess = userGuess.nextInt();
+
+        // Create a Random Object
+        // Random class inspired from java T point: https://www.javatpoint.com/how-to-generate-random-number-in-java
+        Random random = new Random();
+        // Intialize a random generated number variable with a bound of 101
+        Integer num = random.nextInt(101);
+        //System.out.println("Generated Number: " + num);
+
+        // Check if the guesses number if in the range o-100 (inclusive)
+        if (guess >= 0 && guess <= 100) {
+            // Check if guess is not correct
+            if (guess != num) {
+                // Check if guess is larger than number
+                if (guess > num) {
+                    System.out.println("Too high.");
+                } else {
+                    System.out.println("Too low.");
+                }
+            } else {
+                System.out.println("Correct");
+            }
+        } else {
+            // Error message if guess is out of range
+            System.out.println("Your guess of " + guess + " is not between 0 - 100.");
+        }
+
+        // Close the scanner
+        userGuess.close();
+    }
 }
