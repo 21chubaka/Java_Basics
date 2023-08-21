@@ -59,3 +59,7 @@ Guess a Number<br>
 p12_guess_num.java:<br>
 A program that randomly generates an integer and asks the user to guess the number.  It tells of the user was
 right, too high, or too low.  For this program the user only gets one guess.
+
+Is an Array Sorted<br>
+p13_sorted_arr.java:<br>
+A program that takes a series of integers from a user and tells the user if it is sorted or not.
