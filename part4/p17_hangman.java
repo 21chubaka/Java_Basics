@@ -53,5 +53,86 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class p17_hangman {
-    
+    public static void main(String[] args) {
+        System.out.println("Let's Play Hangman!");
+
+        // Scanner for user input
+        Scanner userInput = new Scanner(System.in);
+
+        String secretWord = getRandomWord();
+        //System.out.println("Secret Word: " + secretWord);
+
+        // ArrayList inspired from W3Schools: https://www.w3schools.com/java/java_arraylist.asp
+        ArrayList<Character> userGuesses = new ArrayList<Character>();
+        //System.out.println(userGuesses);
+
+        // Variable to track how many wrong guesses
+        Integer numGuessesWrong = 0;
+        // to break while loop if user is right
+        boolean checkRight = true;
+
+        // Call getMaskedWord to get '***' a masked word
+        String maskedWord = getMaskedWord(secretWord);
+
+        while (checkRight) {
+            // Check if masked word still has '*'
+            if (maskedWord.contains("*")) {
+
+                //System.out.println("Number of Wrong Guesses: " + numGuessesWrong);
+                System.out.print("Guess a letter [" + maskedWord + "] ");
+                String userLetter = userInput.nextLine();
+                userGuesses.add(userLetter.charAt(0));
+
+                // Clear masked word
+                maskedWord = "";
+                //System.out.println(userGuesses);
+                if (secretWord.contains(userLetter)) {
+
+                } else {
+                    // Increment if wrong guess
+                    numGuessesWrong++;
+                }
+                
+                // Loop to update masked word as guess right/wrong
+                for (int i = 0; i < secretWord.length(); i ++) {
+                    
+                    //System.out.println("Track Guess: " + trackGuess);
+                    if (userGuesses.contains(secretWord.charAt(i))) {
+                        //System.out.print(secretWord.charAt(i));
+                        maskedWord += Character.toString(secretWord.charAt(i));
+                    } else {
+                        //System.out.print("*");
+                        maskedWord += "*";
+                    }
+                }
+            } else {
+                // if no '*' update boolean to break loop (cuz the user Won!)
+                checkRight = false;
+            }  
+        }
+        // Inform the user of their Victory and tell them how many times they were wrong
+        System.out.println("You win! The word is " + secretWord + ". You missed " + numGuessesWrong + " times.");
+
+        //Close the scanner
+        userInput.close();
+    }
+    // To generate a random word from a list of words
+    public static String getRandomWord() {
+        String word;
+        String[] words = {"hello", "world", "break", "zoo", "blast", "pumpernickel", "pineapple", "word", "space", "train", 
+        "rocket", "carpet", "horse", "lose", "aircraft", "computer", "penguin", "strawberry", "library", "ocean", "floor", "skeleton", 
+        "ghoul", "goodbye", "evening", "kiwi", "object", "field", "charismatic", "extrovert", "understand", "pneumonoultramicroscopicsilicovolcanoconiosis", "zombie",};
+        int index = (int) (Math.random() * words.length);
+        word = words[index].toLowerCase();
+        return word;
+    }
+    // To generate the intial masked word
+    public static String getMaskedWord(String word) {
+        String maskWord = "";
+
+        for (int i = 0; i < word.length(); i++) {
+            maskWord = maskWord + "*";
+        }
+        return maskWord;
+    }
 }
