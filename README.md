@@ -75,3 +75,8 @@ A program that determines the max value of a randomly generated 2-D Array.
 Markov Matrix<br>
 p16_markov_matrix.java:<br>
 A program that determines if a Matrix is a Markov Matrix.
+
+Hangman Game<br>
+p17_hangman.java:<br>
+A program to play Hangman.  The program randomly chooses a word and the user can continue to guess letters.  If the user
+is able to guess the word, the program then returns how many wrong letters they guesses.
