@@ -50,5 +50,64 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class p16_markov_matrix {
-    
+    public static void main(String[] args) {
+        // Inform the user of the rules of the program
+        System.out.println("If you provide an integer, I will tell make an array of n*n and tell you if it is a Markov Matrix.");
+
+        // Scanner for User to say how many integers they will add
+        Scanner userN = new Scanner(System.in);
+        System.out.println("Enter your integer for the Matrix: ");
+
+        if (userN.hasNextInt()) {
+            Integer matrixNum = userN.nextInt();
+
+            if (matrixNum > 0) {
+                // Intialize empty array of with user given size n*n
+                double[][] numArray = new double[matrixNum][matrixNum];
+
+                // Create a random object
+                Random random = new Random();
+
+                for (int i = 0; i < matrixNum; i++) {
+                    for (int j = 0; j < matrixNum; j++) {
+                        double num = random.nextDouble();
+                        //System.out.println("Row: " + i + " | Column: " + j);
+                        //System.out.println("Random Num: " + num);
+                        numArray[i][j] = num;
+                    }
+                }
+
+                if ( isMarkovMatrix(numArray) == true ) {
+                    System.out.println("It is a Markov Matrix.");
+                } else {
+                    System.out.println("It is not a Markov Matrix.");
+                }
+            } else {
+                System.out.println("The Matrix size must be greater than zero.");
+            }
+        } else {
+            System.out.println("Your input must be an integer that is greater than zero");
+        }
+
+        //Close the scanners
+        userN.close();
+    }
+    // To check if the matrix is Markov
+    public static boolean isMarkovMatrix(double[][] m) {
+        boolean result = false;
+        double totalSum = 0;
+
+        for (int i = 0; i < m.length; i++) {
+            double sum = 0;
+
+            for (int j = 0; j < m.length; j++) {
+                sum = sum + m[i][j];
+            }
+            totalSum = totalSum + sum;
+        }
+        if ((totalSum / m.length) == 1) {
+            result = true;
+        }
+        return result;
+    }
 }
