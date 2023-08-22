@@ -45,6 +45,10 @@ isMarkovMatrix function:
 
 package part4;
 
+// Import Libraries
+import java.util.Random;
+import java.util.Scanner;
+
 public class p16_markov_matrix {
     
 }
