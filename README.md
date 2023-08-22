@@ -67,3 +67,7 @@ A program that takes a series of integers from a user and tells the user if it i
 Has Four Consecutive Integers<br>
 p14_four_con_ints.java:<br>
 A program that takes a series of integers from a user and tells the user if the elements are four consecutive integers.
+
+Max Value of 2-D Array<br>
+p15_maxVal_2dArr.java:<br>
+A program that determines the max value of a randomly generated 2-D Array.
