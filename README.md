@@ -71,3 +71,7 @@ A program that takes a series of integers from a user and tells the user if the 
 Max Value of 2-D Array<br>
 p15_maxVal_2dArr.java:<br>
 A program that determines the max value of a randomly generated 2-D Array.
+
+Markov Matrix<br>
+p16_markov_matrix.java:<br>
+A program that determines if a Matrix is a Markov Matrix.
