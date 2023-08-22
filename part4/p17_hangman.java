@@ -48,6 +48,10 @@ getMaskedWord function:
 
 package part4;
 
+// Import Libraries
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class p17_hangman {
     
 }
