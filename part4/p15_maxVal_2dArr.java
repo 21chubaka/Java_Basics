@@ -36,5 +36,46 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class p15_maxVal_2dArr {
-    
+    public static void main(String[] args) {
+        Random random = new Random();
+
+        int nrows = random.nextInt(10) + 1;
+        int ncols = random.nextInt(10) + 1;
+        //System.out.println("Rows: " + nrows);
+        //System.out.println("Columns: " + ncols);
+
+        // Intialize empty array of with random size
+        double[][] numArray = new double[nrows][ncols];
+
+        for (int i = 0; i < nrows; i++) {
+            for (int j = 0; j < ncols; j++) {
+                double num = random.nextDouble() * 10;
+                //System.out.println("Row: " + i + " | Column: " + j);
+                //System.out.println("Random Num: " + num);
+                numArray[i][j] = num;
+            }
+        }
+        int[] maxIdx = getMaxIndices(numArray);
+        //System.out.println("Index: " + Arrays.toString(maxIdx)); 
+
+        double maxValue = numArray[maxIdx[0]][maxIdx[1]];
+
+        System.out.println("Max value is at: " + Arrays.toString(getMaxIndices(numArray)));
+        System.out.println("Max value: " + maxValue);
+    }
+    public static int[] getMaxIndices(double[][] arr) {
+        int[] maxIdx = new int[]{0, 0};
+        double maxNum = arr[0][0];
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (maxNum < arr[i][j]) {
+                    maxNum = arr[i][j];
+                    maxIdx[0] = i;
+                    maxIdx[1] = j;
+                }
+            }
+        }
+        return maxIdx;
+    }
 }
